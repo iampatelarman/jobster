@@ -6,8 +6,9 @@ import FormRow from "./FormRow";
 import FormRowSelect from "./FormRowSelect";
 
 const SearchContainer = () => {
-  const { isLoading, search, searchStatus, searchType, sort, sortOptions } =
-    useSelector((store) => store.allJobs);
+  const { search, searchStatus, searchType, sort, sortOptions } = useSelector(
+    (store) => store.allJobs
+  );
   const { statusOptions, jobTypeOptions } = useSelector((store) => store.job);
   const dispatch = useDispatch();
 
